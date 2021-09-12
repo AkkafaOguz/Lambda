@@ -99,18 +99,18 @@ public class Lambda03 {
                 System.out.println();
 
 
-        //8) Create a method to check if the lengths of all elements are less than 12 (All Match) Returns whether no elements of this stream match the provided predicate (condition).
+        //8) Create a method to check if the lengths of all elements are less than 12 (All Match) Returns whether all elements of this stream match the provided predicate (condition).
 
           boolean ifLength = l.stream().allMatch(t-> t.length()<12);
           System.out.println(ifLength);
 
-        //9) Create a method to check if the initial of any element is not ‘X’ (Any Match)
+        //9) Create a method to check if the initial of any element is not ‘X’ (None Match) Returns whether no elements of this stream match the provided predicate (condition).
 
           boolean ifX = l.stream().noneMatch(t-> t.startsWith("X"));
           System.out.println(ifX);
 
 
-        //10) Create a method to check if at least one of the elements ending with "R"
+        //10) Create a method to check if at least one of the elements ending with "R" (Any Match) Returns whether any elements of this stream match the provided predicate (condition).
 
           boolean ifR = l.stream().anyMatch(t-> t.endsWith("R"));
           System.out.println(ifR);
