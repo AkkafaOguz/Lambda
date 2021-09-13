@@ -25,4 +25,19 @@ public class Utils {
     public static double makeHalf(double x) {
         return x/2;
     }
+
+    public static int digit (int x) {
+
+        int rakam = 0;
+
+        while(x!=0){
+
+            rakam += x%10;
+            x/=10;
+        }
+
+        return rakam;
+    }
+
+
 }
